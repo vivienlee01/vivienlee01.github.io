@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,45 +9,184 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  align-items: center;
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   line-height: 1.6;
   color: aliceblue;
-  background-color: #333;
+  background-color: #0b0724;
 }
 
-a {
+/* ==== Navigation header ==== */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(11, 7, 36, 0.7);
+  backdrop-filter: blur(3px);
+  padding: 1rem 3rem;
+  z-index: 100;
+}
+
+nav a {
   color: aliceblue;
   margin-right: 2rem;
   font-size: 0.95rem;
   transition: color 0.2s;
+  text-decoration: none;
+}
+
+nav a.brand {
+  font-size: 1.5rem;
 }
 
 a:hover {
-  color: #dceeff;
+  color: #7e73b4;
 }
 
+/* ==== Paricles ==== */
+#particlewrapper {
+  height: 400px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ==== Hero ==== */
 #hero {
-  min-height: 50vh;
+  position: relative;
+  min-height: 40vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
-  max-width: 800px;
-  padding: 2rem;
-  margin: 0 auto;
+  padding: 1rem;
+  overflow: hidden;
 }
 
 #hero h1 {
-  font-size: 3rem;
+  margin-top: 0;
+  font-size: 4rem;
   margin-bottom: 1rem;
+  font-weight: 500;
 }
 
 #hero p {
   font-size: 1.2rem;
-  color: #1a9cff;
+  color: #7e73b4;
 }
 
+/* ==== Section ====*/
+section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+}
+
+section:not(#hero) {
+  border-top: 1px solid #7674c4;
+}
+
+/* ==== Typography ====*/
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #9477b9;
+}
+
+p {
+  font-size: 1rem;
+  color: #d1d5db;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+/* ==== About ==== */
+#about p {
+  margin-bottom: 1.5rem;
+}
+
+#about h3 {
+  color: #bcaed9;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.tech-tags span {
+  background: rgba(96, 165, 250, 0.1);
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  border: 1px solid rgba(35, 48, 230, 0.2);
+}
+
+/* ==== Experience ==== */
+.job {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #1f1f1f;
+}
+
+.job:last-child {
+  border-bottom: none;
+  margin-bottom: 0; /* remove outside spacing */
+  padding-bottom: 0; /* remove inside spacing */
+}
+.job h3 {
+  margin-bottom: 0.5rem;
+}
+
+.company {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.date {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+ul {
+  margin-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+li::marker {
+  color: #1f4bb8;
+}
+
+/* ==== Projects ==== */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -69,4 +212,65 @@ a:hover {
   border: 1px solid #f0f0f0;
   border-radius: 4px;
   font-size: 0.9rem;
+}
+
+/* ==== Contact ==== */
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+  border: 1px solid #7674c4; /* faint border */
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 2rem auto;
+  box-shadow: 0 0 8px rgba(167, 139, 250, 0.15);
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-item i {
+  font-size: 1.5rem;
+  color: aliceblue;
+  transition: color 0.3s ease; /* only color changes */
+}
+
+.contact-item i:hover {
+  color: #a78bfa;
+  transform: scale(1.2);
+}
+
+.contact-item h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.contact-item p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  border-top: 1px solid #1f1f1f;
+  padding: 3rem 2rem 2rem;
+  text-align: center;
+}
+
+.footer-content p {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-note {
+  font-size: 0.85rem;
+  color: #4b5563;
 }
