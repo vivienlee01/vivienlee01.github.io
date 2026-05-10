@@ -1,7 +1,7 @@
 {
   "particles": {
     "number": {
-      "value": 200,
+      "value": 100,
       "density": {
         "enable": true,
         "value_area": 800
@@ -17,7 +17,7 @@
         "color": "#000000"
       },
       "polygon": {
-        "nb_sides": 5
+        "nb_sides": 2
       },
       "image": {
         "src": "img/github.svg",
