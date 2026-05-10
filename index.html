@@ -1,69 +1,171 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vivien Lee</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <a href="about">About</a>
-            <a href="projects">Projects</a>
-            <a href="experience">Experience</a>
-            <a href="blog">Blog</a>
-            <a href="contact">Contact Me</a>
-        </nav>
+      <nav>
+        <a href="index.html" class="brand">Vivien Lee</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <!-- <a href="blog.html">Blog</a> -->
+        <a href="#contact">Contact</a>
+      </nav>
     </header>
 
     <div id="particlewrapper">
-    <div id="particles-js"></div>
+      <div id="particles-js"></div>
     </div>
 
     <section id="hero">
-        <h1>Vivien Lee</h1>
-        <p> Product | Site Reliability | Operations </p>
+      <h1>Vivien Lee</h1>
+      <p>Product | Site Reliability | Operations</p>
     </section>
 
     <section id="about">
-        <h2>About Me</h2>
-        <p> Hi! I'm Vivien</p>
-        <p> I'm a site relibility engineer transitioning into customer-facing technical roles. I spent 2 years in Tiktok optimizing monitoring systems and reducing alert noise through alarm standardization projects</p>
-        <P>These days I'm building skills in API troubleshooting, debuggingm and figuring out how to break down and explain technical problems. I'm drawn to roels where I can be the bridge between engineering and customers.</p>
-        <!-- <p>I learn by building, then breaking things, then documenting the fix. Curently working on monitoring tools and API integration projects</p>
-        <p>When I'm not debugging, I'm probably making digital art or playing games </p> -->
-        
+      <h2>About Me</h2>
+      <p>
+        Hi! I'm Vivien and I've spent 2 years in TikTok optimizing monitoring
+        systems that help engineering teams work better. I'm drawn to roles
+        where I can be the bridge between engineering and customers so I'm
+        building skills: API troubleshooting, incident response and writing
+        documentation that explains technical concepts.
+      </p>
+      <p>
+        When I'm not coding, I like to spend my time in nature hiking, playing
+        video games or creating digital art.
+      </p>
+      <h3>Tech Stack</h3>
+      <div class="tech-tags">
+        <span>Python</span>
+        <span>SQL</span>
+        <span>Grafana</span>
+      </div>
     </section>
 
     <section id="experience">
-        <h2>My Experience</h2>
-        <p>Coming soon</p>
+      <h2>My Experience</h2>
+
+      <div class="job">
+        <div class="job-header">
+          <h3>Site Reliability Engineer</h3>
+          <span class="company">TikTok</span>
         </div>
+        <p class="date">October 2023 – October 2024</p>
+        <ul>
+          <li>
+            Collaborated with teams across America and Asia to standardize
+            monitoring, reducing alert volume by 50%
+          </li>
+          <li>
+            Led alarm optimization projects using Monitoring as Code (MaC) to
+            expand coverage for critical server components
+          </li>
+          <li>
+            Managed incident response and on-call rotations, coordinating across
+            global engineering teams
+          </li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <h3>Product & Growth Analyst</h3>
+          <span class="company">Locofy.ai</span>
+        </div>
+        <p class="date">August 2022 – August 2023</p>
+        <ul>
+          <li>
+            Created 10+ best practices guides and tutorial videos to improve
+            product adoption
+          </li>
+          <li>
+            Developed test plans and collaborated with PMs to enhance user
+            experience
+          </li>
+          <li>
+            Supported go-to-market launches with technical documentation and
+            video content
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section id="projects">
-        <h2>Projects</h2>
-        <p>Coming soon</p>
-        <!-- <div class="project-grid">
-            <div class="project-card">
-                <h3>A little game</h3>
-                <p>smth smt</p>
-            <div class="tech-stack">
-                <span>Python</span>
-            </div>
-        </div> -->
-        </div>
+      <h2>Projects</h2>
+      <p>Coming soon</p>
+      <!-- <div class="project-grid">
+              <div class="project-card">
+                  <h3>A little game</h3>
+                  <p>smth smt</p>
+              <div class="tech-stack">
+                  <span>Python</span>
+              </div>
+          </div> -->
     </section>
 
     <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: leeyuetong8@gmail.com</p>
-        <p>Github: <a href="https://github.com/vivienlee01" target="_blank">@vivinelee01</a></p>
+      <h2>Let's Connect</h2>
+
+      <div class="contact-box">
+        <div class="contact-item">
+          <a href="mailto:vivienlee099@gmail.com" target="_blank">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+          <div>
+            <h3>Email</h3>
+            <p>vivienlee099@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <a href="https://github.com/vivienlee01" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <div>
+            <h3>GitHub</h3>
+            <p>@vivienlee01</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <a href="https://www.linkedin.com/in/vivienleeyt/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <div>
+            <h3>LinkedIn</h3>
+            <p>Vivien Lee</p>
+          </div>
+        </div>
+      </div>
     </section>
+
     <!-- loading particles script-->
     <script src="js/particles.js"></script>
     <script src="app.js"></script>
-</body>
 
+    <footer>
+      <div class="footer-content">
+        <p>Built with HTML, CSS and vanilla JS ☕</p>
+        <p class="footer-note">
+          © 2026 Vivien Lee • Site made with particles.js
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
