@@ -19,12 +19,25 @@
   <body>
     <header>
       <nav>
-        <a href="index.html" class="brand">Vivien Lee</a>
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <!-- <a href="blog.html">Blog</a> -->
-        <a href="#contact">Contact</a>
+        <div class="nav-container">
+          <a href="#" class="brand">Vivien Lee</a>
+          <button
+            class="nav-toggle"
+            id="navToggle"
+            aria-label="Toggle navigation"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="nav-links" id="navLinks">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <!-- <a href="blog.html">Blog</a> -->
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -40,15 +53,15 @@
     <section id="about">
       <h2>About Me</h2>
       <p>
-        Hi! I'm Vivien and I've spent 2 years in TikTok optimizing monitoring
-        systems that help engineering teams work better. I'm drawn to roles
-        where I can be the bridge between engineering and customers so I'm
-        building skills: API troubleshooting, incident response and writing
-        documentation that explains technical concepts.
+        Hi! I'm Vivien👋 and I optimize systems and processes that help
+        engineering teams operate more efficiently. At Tiktok, I spent 2 years
+        standardizing alerts across global teams, making sure oncall engineers
+        could actually sleep at night. I'm focused on roles where I can bridge
+        technical complexity and customer needs.
       </p>
       <p>
-        When I'm not coding, I like to spend my time in nature hiking, playing
-        video games or creating digital art.
+        When I'm not debugging systems, I'm hiking, gaming or making digital
+        art!
       </p>
       <h3>Tech Stack</h3>
       <div class="tech-tags">
@@ -158,6 +171,23 @@
     <!-- loading particles script-->
     <script src="js/particles.js"></script>
     <script src="app.js"></script>
+
+    <script>
+      // Mobile navigation toggle
+      const navToggle = document.getElementById("navToggle")
+      const navLinks = document.getElementById("navLinks")
+
+      navToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active")
+      })
+
+      // Close menu when clicking a link
+      navLinks.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("active")
+        })
+      })
+    </script>
 
     <footer>
       <div class="footer-content">
